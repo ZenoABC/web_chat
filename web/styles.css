@@ -1,0 +1,115 @@
+:root {
+    --primary-background-color:   rgb(10, 48, 105);
+    --secondary-background-color: rgb(22, 78, 163);
+    --tertiary-background-color:  rgb(55, 97, 160);
+}
+
+body {
+    font-family: Verdana;
+    background-color: var(--primary-background-color);
+    color: white;
+}
+
+/* Classes */
+
+div.frame {
+    background-color: var(--secondary-background-color);
+    border-radius: 10px;
+}
+
+
+div.room {
+    border: 1px solid rgb(0, 0, 0);
+	border-radius: 10px;
+	background-color: rgba(1, 8, 10, 0.664);
+	text-align: center;
+	line-height: 26px;
+	height: 26px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-bottom: 2px;
+	opacity: 0.5;
+}
+div.room:hover {
+    opacity: 0.7;
+}
+
+
+div.private_room {
+    background-color: rgba(90, 9, 33, 0.897);
+}
+
+
+div.message {
+	padding: 3px;
+	word-wrap: normal;
+	white-space: normal;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+/* Specific frames */
+
+div#room_list {
+    position: fixed;
+    width: 200px;
+    left: 10px;
+    top: 30px;
+    height: calc(100% - 40px);
+    display: block;
+    overflow-y: auto;
+}
+
+div#conversation {
+    position: fixed;
+    width: calc(100% - 240px); /* 100% - 440px*/
+    left: 220px;
+    top: 30px;
+    height: calc(100% - 110px - 18px);
+    display: block;
+    overflow-y: auto;
+}
+
+textarea.text_input {
+    position: fixed;
+    display: block;
+    overflow-y: auto;
+    resize: none;
+    border-radius: 10px;
+}
+
+input.button {
+    position: fixed;
+    display: block;
+    overflow-y: auto;
+    resize: none;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--secondary-background-color);
+    cursor: pointer;
+}
+
+input#show_settings {
+    position: fixed;
+    width: 60px;
+    left: calc(100% - 140px);
+    bottom: 10px;
+    height: 80px;
+    display: block;
+    overflow-y: auto;
+    resize: none;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--secondary-background-color);
+    cursor: pointer;
+}
+
+div#setting_modal {
+    position: fixed;
+    background-color: var(--tertiary-background-color);
+    border-radius: 10px;
+    width: 500px;
+    height: 400px;
+    left: calc(100% - 70vw);
+    top: 50px;
+}

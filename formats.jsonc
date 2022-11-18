@@ -1,0 +1,37 @@
+[
+    // Message:
+    {
+        "timestamp": "14:51:00",
+        "author": "name",
+        "author_color": "#05e5da",
+        "message": "Hello World!"
+    },
+    
+    // Channel:
+    {
+        "name": "Room 0",
+        "id": "0",
+        "private": true
+    },
+    
+    // Client data
+    {
+        "op": "send_message",
+        "text": "text",
+        "color": "#FF0000"
+    },
+    {
+        "op": "switch_channel",
+        "id": 0
+    },
+    {
+        "op": "authorize",
+        "username": "..."
+    },
+
+    // Server Data
+    [
+        "eval|WhateverCode"
+    ]
+
+]

@@ -1,0 +1,30 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="room_list" class="frame"></div>
+    <div id="conversation" class="frame"></div>
+    <textarea id="text_input" class="text_input" style="width: calc(100% - 370px);left: 220px;bottom: 10px;height: 80px;"></textarea>
+    <input id="send_text" class="button" type="button" value="Send" onclick="send_text_message()" style="width: 60px;left: calc(100% - 70px);bottom: 10px;height: 80px;">
+    <input id="show_settings" type="button" value="Settings" onclick="open_settings_modal()">
+    
+    <div id="setting_modal" style="visibility: hidden;">
+        <a>Author Color:</a><br>
+        <input id="setting_modal_hex_author" type="color"><br>
+        
+        <a>Primary Background Color:</a><br>
+        <input id="setting_modal_hex_primary" type="color"><br>
+        
+        <a>Secondary Background Color:</a><br>
+        <input id="setting_modal_hex_secondary" type="color"><br>
+
+        <a>Tertiary Background Color:</a><br>
+        <input id="setting_modal_hex_tertiary" type="color"><br>
+        
+        <input class="button" type="button" value="Save" onclick="setting_modal_save()" style="width: 80px; top: 430px">
+        <input class="button" type="button" value="Close" onclick="setting_modal_close()" style="width: 80px; top: 430px; background-color: rgb(88, 13, 13); left: calc(100% - 61vw);">
+    </div>
+    
+    <script src="script.js"></script>
+</body>

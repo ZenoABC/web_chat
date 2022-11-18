@@ -1,0 +1,11 @@
+{
+    "rooms": {
+        "0": {
+            "name": "General",
+            "id": 0,
+            "private": false,
+            "clients": []
+        }
+    },
+    "users": {}
+}
